@@ -106,8 +106,7 @@ a:hover {
   background: #d932c7;
   background:
   /* masthead, transparent magenta */
-  
-  linear-gradient( rgba(217, 50, 199, 0.65), rgba(217, 50, 199, 0.65)), url(http://jennyy.com/images/swirl_pattern.png) repeat-x 0 0;
+  linear-gradient( rgba(217, 50, 199, 0.65), rgba(217, 50, 199, 0.45)), url(http://jennyy.com/images/swirl_pattern.png) repeat-x 0 0;
   border-bottom: 9px solid rgba(115, 22, 115, 1);
 }
 
@@ -190,7 +189,7 @@ a:hover {
   background:
   /* footer, transparent magenta */
   
-  linear-gradient( rgba(217, 50, 199, 0.65), rgba(217, 50, 199, 0.65)), url(http://jennyy.com/images/swirl_pattern.png) repeat-x 0 0;
+  linear-gradient( rgba(217, 50, 199, 0.45), rgba(217, 50, 199, 0.65)), url(http://jennyy.com/images/swirl_pattern.png) repeat-x 0 0;
   width: 100%;
   margin: 5em auto 0 auto;
   padding: 2em 0;
@@ -294,4 +293,29 @@ a:hover {
   box-shadow: 5px 5px 0px 0px rgba(115, 22, 115, 1);
   color: #fff;
   }
+}
+
+/* testing out fade animation */
+.masthead, .content-footer, .profile-img, .portfolio-section img {
+  -webkit-animation: fadein 2s ;
+  -moz-animation:    fadein 2s ;
+  -o-animation:      fadein 2s ;
+  animation:         fadein 2s ;
+}
+
+@-webkit-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
