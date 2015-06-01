@@ -82,7 +82,7 @@ a:hover {
   box-sizing: border-box;
 }
 .grid-pad{
-  padding: 10px 0px 10px 20px;
+  padding: 10px 0px 10px 0px;
 }
 [class*='col-'] {
   padding-right: 20px;
@@ -169,12 +169,10 @@ a:hover {
   width: 75%;
   margin: 2em auto;
 }
-
 .profile-img {
-  max-width: 7em;
+  max-width: 8em;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  border-radius: 50%;
 }
 .portfolio-section img {
   width: 100%;
@@ -228,6 +226,23 @@ a:hover {
   display: inline-block;
   padding: .5em;
 }
+@media only screen and (min-width: 527px) and (max-width: 622px) {
+.col-1-2{
+  width:100%;
+}
+.col-3-4 {
+  width: 100%;
+}
+.grid-pad{
+    padding: 0px;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-left: 0px;
+}
+.profile-img{
+  display: none;
+}
+}
 @media only screen and (max-width: 526px) {
 .col-1-4 {
   width: 100%;
@@ -258,9 +273,9 @@ a:hover {
   .masthead-box {
     width: 22em;
     height: 4.65em;
-     -webkit-box-shadow: 5px 5px 0px 0px rgba(115, 22, 115, 1);
-  -moz-box-shadow: 5px 5px 0px 0px rgba(115, 22, 115, 1);
-  box-shadow: 5px 5px 0px 0px rgba(115, 22, 115, 1);
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(115, 22, 115, 1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(115, 22, 115, 1);
+    box-shadow: 5px 5px 0px 0px rgba(115, 22, 115, 1);
   }
   .profile-img {
     display: none;
