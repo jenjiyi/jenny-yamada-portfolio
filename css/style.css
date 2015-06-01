@@ -260,6 +260,9 @@ a:hover {
 .grid-pad > [class*='col-']:last-of-type {
   padding-left: 0px;
 }
+[class*='col-'] {
+  padding-right: 0px;
+}
   .masthead {
     padding: 2em 0;
     border-bottom: 5px solid rgba(115, 22, 115, 1);
